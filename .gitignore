@@ -1,0 +1,28 @@
+# Dataset
+listings.csv
+
+# Archivos del sistema
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Entornos virtuales
+venv/
+env/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Output
+.ipynb_checkpoints/
