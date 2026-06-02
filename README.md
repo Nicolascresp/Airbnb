@@ -22,15 +22,16 @@ El objetivo principal es estructurar un modelo predictivo capaz de **estimar el 
   - **Sección 2:** Feature engineering, reducción de dimensionalidad
   - **Sección 3:** Modelado, validación cruzada, tuning de hiperparámetros y resultados finales
   
+* **`listings.csv`**: Dataset crudo con 25,000 observaciones de Airbnb Madrid (ya incluido en el repositorio)
 * **`requirements.txt`**: Archivo de configuración con las librerías y versiones requeridas para garantizar la reproducibilidad del entorno.
 * **`README.md`**: Descripción e instrucciones generales del proyecto.
 
 ---
 
 ## 📊 Dataset: Origen y Acceso
-De acuerdo con las directrices de la cátedra para el manejo de archivos pesados, el dataset crudo (`listings.csv`) **no se encuentra subido a este repositorio**. 
+El dataset crudo (`listings.csv`) **está incluido en este repositorio**, descargado desde [Inside AirBnB - Madrid Data](https://insideairbnb.com/get-the-data/).
 
-* **Fuente oficial de los datos:** Puedes acceder y descargar el archivo directamente desde [Inside AirBnB - Madrid Data](https://insideairbnb.com/get-the-data/).
+**Tamaño:** 4.3 MB | **Observaciones:** 25,000 | **Variables:** 18
 
 ---
 
@@ -44,18 +45,16 @@ Para clonar este repositorio y ejecutar los modelos en tu entorno local, sigue e
    cd Airbnb
    ```
 
-2. **Descargar el dataset:**
-   - Descarga `listings.csv` desde [Inside AirBnB - Madrid](https://insideairbnb.com/get-the-data/)
-   - Coloca el archivo en la raíz del repositorio
-
-3. **Instalar dependencias:**
+2. **Instalar dependencias:**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Ejecutar el notebook:**
-   - Abre Jupyter Notebook o JupyterLab
-   - Ejecuta `Tp_Airbnb_Madrid (1).ipynb` de punta a punta
+3. **Ejecutar el notebook:**
+   ```bash
+   jupyter notebook "Tp_Airbnb_Madrid (1).ipynb"
+   ```
+   - O abre JupyterLab y ejecuta el notebook de punta a punta
 
 ---
 
@@ -69,15 +68,20 @@ Para clonar este repositorio y ejecutar los modelos en tu entorno local, sigue e
 
 ---
 
-## 📝 Notas Importantes
+## 📝 Reproducibilidad
 
-- El notebook está ejecutado completamente y contiene todas las salidas (outputs)
-- El dataset (`listings.csv`) debe descargarse por separado
-- La reproducibilidad está garantizada mediante `requirements.txt` y el código sin dependencias externas
-- Todos los integrantes del grupo comprenden cada sección del código y pueden defender el trabajo
+✅ **El proyecto es completamente reproducible:**
+- ✅ Dataset incluido en el repositorio (`listings.csv`)
+- ✅ Archivo `requirements.txt` con versiones pinned de todas las dependencias
+- ✅ Notebook ejecutado de punta a punta sin dependencias externas
+- ✅ Rutas relativas (sin rutas hardcodeadas)
+- ✅ Código sin dependencias de archivos generados o variables globales
+
+**Para reproducir:** Solo necesitas clonar, instalar deps y ejecutar el notebook.
 
 ---
 
 ## 📌 Versión de Entrega
 - **Fecha:** Junio 2026
 - **Estado:** Entrega completa (EDA + Modelado en un único archivo)
+- **Reproducibilidad:** 100% garantizada
